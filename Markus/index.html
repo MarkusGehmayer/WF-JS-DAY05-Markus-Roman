@@ -27,7 +27,7 @@
 		this.model = type;
 		this.makeYear = year;
 		this.color = color;
-		this fuelType = fuel;
+		this.fuelType = fuel;
 		this.modelName = function() {
 			return this.name +" "+ this.model;
 		}
@@ -40,7 +40,28 @@
 	var car5 = new CarConstructor("Audi", "A3", "2013","black", "eggnog");
 
 	
+	CarConstructor.prototype.fromOutside = function() {
+		return "your search result: " + this.name + " " + this.model;
+	}
 
+
+	class Cars {
+		CarConstructor(maker, type, year, color, fuel) {
+		this.name = maker;
+		this.model = type;
+		this.makeYear = year;
+		this.color = color;
+		this.fuelType = fuel;
+		}
+		modelName(){
+			return "Hallo " + this.name + " " + this.model;
+		}
+	}
+
+	console.log(car3.modelName());
+
+	CarConstructor.prototype.color = "magenta";
+	console.log(CarConstructor.prototype.color);
 
 	</script>
 </body>
