@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+
+	<div id="main">
+		
+
+	</div>
+	<script>
+
+	var car = {
+		name: "Honda",
+		model: "CRX",
+		makeYear: "2005",
+		color: "red",
+		fuelType: "wodka",
+		modelName: function() {
+			return this.name +" "+ this.model
+		}
+	}
+
+	function CarConstructor(maker, type, year, color, fuel) {
+		this.name = maker;
+		this.model = type;
+		this.makeYear = year;
+		this.color = color;
+		this fuelType = fuel;
+		this.modelName = function() {
+			return this.name +" "+ this.model;
+		}
+	}
+
+	var car1 = new CarConstructor("Mercedes", "A-Klasse", "1999","silver", "schnapps");
+	var car2 = new CarConstructor("Nissan", "Skyline", "2004","darkblue", "N2O");
+	var car3 = new CarConstructor("Opel", "Vectra", "1987","biscuit", "whisky");
+	var car4 = new CarConstructor("VW", "Polo", "2015","tango", "absinth");
+	var car5 = new CarConstructor("Audi", "A3", "2013","black", "eggnog");
+
+	
+
+
+	</script>
+</body>
+</html>
