@@ -1,0 +1,123 @@
+@charset "UTF-8";
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "PT Sans Narrow", verdana, sans-serif;
+  width: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+a:link, a:hover, a:visited {
+  color: white;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo {
+  display: flex;
+  margin-left: 5em;
+  font-family: Verdana, sans-serif;
+  font-weight: 800; }
+
+.logotext {
+  padding-top: 0.4em;
+  padding-right: 0.1em;
+  font-size: 1.6em; 
+  color: white;
+}
+
+.logoCF {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.7em;
+  height: 1.7em;
+  background-color: #bf2524;
+  color: white;
+  border-radius: 50%;
+  font-size: 2em; }
+
+.ad {
+  margin: 2%; }
+
+nav {
+  background-color: #414141;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 5px 0px; }
+
+nav ul {
+  margin: 0; }
+
+nav li, #footernav li {
+  display: inline;
+  padding-right: 1em; }
+
+main {
+  font-family: "PT Sans Narrow", verdana, sans-serif;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 1080px 600px; }
+
+h1, h2 {
+  margin: 0;
+  padding-top: 4%;
+  font-weight: 300;
+  font-size: 2em; }
+
+h3 {
+  margin: 0;
+  color: #51638E; }
+
+main > h1 {
+  color: white;
+  padding-left: 1em; }
+
+
+
+
+footer {
+  background-color: black;
+  color: white;
+  align-items: start;
+  display: flex;
+  flex-direction: column; }
+
+footer .copy {
+  align-self: center; }
+
+/*---------------------------------------------------------------------------------*/
+@media screen and (resolution: 292dpi), (orientation: portrait), (max-width: 1080px) {
+  .logo {
+    margin: 4% auto 4% 4%;
+    font-size: 2vh; }
+
+  .ad {
+    display: none; }
+
+  h1 {
+    font-size: 8vh; }
+
+  h2, h3 {
+    font-size: 4.5vh; }
+
+  nav {
+    font-size: 3.5vh; }
+
+  main {
+    background-position: top;
+    background-size: auto 70%; }
+
+  .copy {
+    font-size: 2vh; } }
+
+/*# sourceMappingURL=style.css.map */
