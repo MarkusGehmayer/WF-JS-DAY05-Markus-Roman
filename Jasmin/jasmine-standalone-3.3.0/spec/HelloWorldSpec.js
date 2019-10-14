@@ -6,12 +6,17 @@
 */   
 
 // describe your code
-describe("Hello World", function(){
+describe("consoleLogTest", function(){
+		beforeEach(function(){
+			spyOn(window.console, 'log');
+		});
 
        // what it should do
-       it("should Return Hello world",function(){
+       it("should Return array in console",function(){
                //expect something
-               expect(helloworld()).toEqual('Hello World');
+               consoleLogTest();
+               expect(window.console.log).toHaveBeenCalled()
+               
        });
 
 });
@@ -20,3 +25,4 @@ describe("Hello World", function(){
 /*
 Note how describe - it() argument reads like a sentence.
 */
+
